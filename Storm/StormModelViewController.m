@@ -85,8 +85,6 @@
     self.beerBashRegion = [[CLCircularRegion alloc] initWithCenter:beerBashLocation radius:50.0 identifier:@"the WWDC Beer Bash"];
     
     [self _checkAuthorizationAndStartMonitoring];
-    
-    [self locationManager:self.manager didExitRegion:self.wwdcRegion];
 }
 
 - (void)didReceiveMemoryWarning
